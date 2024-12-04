@@ -1,6 +1,3 @@
-using System;
-using System.Text.RegularExpressions;
-
 namespace aoc2024.Days;
 
 public static class Day4
@@ -22,7 +19,6 @@ public static class Day4
 
     public static bool IsXmas(char[][] matrix, int x, int y)
     {
-
         return matrix[y][x] == 'A' &&
          (
             (matrix[y - 1][x - 1] == 'M' && matrix[y + 1][x + 1] == 'S') ||

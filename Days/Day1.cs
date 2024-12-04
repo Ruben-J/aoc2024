@@ -1,5 +1,3 @@
-using System;
-
 namespace aoc2024.Days;
 
 public static class Day1
