@@ -1,10 +1,10 @@
 namespace aoc2024.Days;
 
-public static class Day2
+public static class Day02
 {
     public static async Task Execute()
     {
-        var lines = await File.ReadAllLinesAsync("Input/Day2.txt");
+        var lines = await File.ReadAllLinesAsync("Input/Day02.txt");
         var safe = 0;
         foreach (var line in lines)
         {

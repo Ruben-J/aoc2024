@@ -3,12 +3,12 @@ using System.Reflection.PortableExecutable;
 
 namespace aoc2024.Days;
 
-public static class Day6
+public static class Day06
 {
     public static async Task Execute()
     {
         char Guard = '^';
-        var lines = await File.ReadAllLinesAsync("Input/Day6.txt");
+        var lines = await File.ReadAllLinesAsync("Input/Day06.txt");
         char[,] matrix = new char[lines[0].Length, lines.Length];
         int GuardX = 0;
         int GuardY = 0;

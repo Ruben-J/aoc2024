@@ -2,13 +2,13 @@ using System;
 
 namespace aoc2024.Days;
 
-public static class Day5
+public static class Day05
 {
 
     private static Dictionary<string,List<string>> _conditions = new();
     public static async Task Execute()
     {
-        var lines = await File.ReadAllLinesAsync("Input/Day5.txt");
+        var lines = await File.ReadAllLinesAsync("Input/Day05.txt");
         bool checkLines = false;
         int total = 0;
         foreach(var line in lines){

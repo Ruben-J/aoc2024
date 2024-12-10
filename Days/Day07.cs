@@ -2,12 +2,12 @@ using System;
 
 namespace aoc2024.Days;
 
-public static class Day7
+public static class Day07
 {
     static Dictionary<Int64, List<Int64>> equotations = new();
     public static async Task Execute()
     {
-        var lines = await File.ReadAllLinesAsync("Input/Day7.txt");
+        var lines = await File.ReadAllLinesAsync("Input/Day07.txt");
         equotations = lines.ToDictionary(x => Convert.ToInt64(x.Split(':')[0]), x => x.Split(':')[1].Trim().Split(' ').Select(x => Convert.ToInt64(x)).ToList());
         var total = equotations.Where(x => ValidateEquotation(x.Key, x.Value)).Sum(x => x.Key);
         Console.WriteLine($"Day 7: {total}");

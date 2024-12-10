@@ -3,11 +3,11 @@ using System.Text;
 
 namespace aoc2024.Days;
 
-public static class Day9
+public static class Day09
 {
     public static async Task Execute()
     {
-        var text = (await File.ReadAllTextAsync("Input/Day9.txt")).ToCharArray();
+        var text = (await File.ReadAllTextAsync("Input/Day09.txt")).ToCharArray();
         var diskInput = ParseDiskInput(text);
         var formattedDiskInput = FormatDiskInput(diskInput);
         var reversedDiskInput = diskInput.ToArray().Reverse().ToArray();

@@ -5,14 +5,14 @@ using System.Reflection.PortableExecutable;
 namespace aoc2024.Days;
 
 
-public static class Day8
+public static class Day08
 {
     private static char[,] _matrix;
     private static Dictionary<char, List<Vector2>> _antennas = new();
     private static List<Vector2> _antiNodes = new();
     public static async Task Execute()
     {
-        _matrix = await ReadMatrixFromFileAsync("Input/Day8.txt");
+        _matrix = await ReadMatrixFromFileAsync("Input/Day08.txt");
         RetrieveAntennas();
         RetrieveAntiNodes();
         AddAntennasAsAntiNodes();

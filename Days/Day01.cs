@@ -1,10 +1,10 @@
 namespace aoc2024.Days;
 
-public static class Day1
+public static class Day01
 {
     public static async Task Execute()
     {
-        var lines = await File.ReadAllLinesAsync("Input/Day1.txt");
+        var lines = await File.ReadAllLinesAsync("Input/Day01.txt");
         var splitted = lines.Select(x => x.Split("   "));
         var firstList = splitted.Select(x => Convert.ToInt32(x[0])).OrderBy(x => x).ToArray();
         var secondList = splitted.Select(x => Convert.ToInt32(x[1])).OrderBy(x => x).ToArray();

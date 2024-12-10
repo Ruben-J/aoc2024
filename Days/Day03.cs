@@ -2,11 +2,11 @@ using System.Text.RegularExpressions;
 
 namespace aoc2024.Days;
 
-public static class Day3
+public static class Day03
 {
     public static async Task Execute()
     {
-        var mulText = await File.ReadAllTextAsync("Input/Day3.txt");
+        var mulText = await File.ReadAllTextAsync("Input/Day03.txt");
         var regexMiddleParts = new Regex("(do\\(\\))(.|\\s)*?(don't\\(\\))");
         var result = regexMiddleParts.Matches($"do(){mulText}don't()").Sum(x => Multiply(x.Value));
 
