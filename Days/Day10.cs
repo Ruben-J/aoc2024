@@ -5,7 +5,7 @@ namespace aoc2024.Days;
 
 public static class Day10
 {
-     private static int?[,] _matrix;
+     private static int?[,] _matrix = new int?[0,0];
 
     public static async Task Execute()
     {
