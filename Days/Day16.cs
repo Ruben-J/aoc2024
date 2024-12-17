@@ -9,17 +9,12 @@ public static class Day16
 
     private static Vector2 Start;
     private static Vector2 End;
-
     private static char[,] Maze;
-    private static char Wall = '#';
 
-    private static int? SuccessfulPath;
     private static Vector2 North = new Vector2(0, -1);
     private static Vector2 South = new Vector2(0, 1);
     private static Vector2 East = new Vector2(1, 0);
     private static Vector2 West = new Vector2(-1, 0);
-    private static List<(Vector2, int)> Visited = new List<(Vector2, int)>();
-    private static List<Vector2> SuccessfulRoute;
     public static async Task Execute()
     {
         var lines = await File.ReadAllLinesAsync("Input/Day16.txt");
